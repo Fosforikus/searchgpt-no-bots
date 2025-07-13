@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <title>TEST A3 – Aucun moteur autorisé</title>
+</head>
+<body>
+  <h1>🧪 TEST A3 – Blocage total des bots</h1>
+
+  <h2>🔍 Objectif du test</h2>
+  <p>Ce test vise à déterminer si SearchGPT peut accéder à une page qui n’est indexée par **aucun moteur de recherche**. Le fichier robots.txt interdit tous les bots. Le contenu contient une phrase absurde unique, totalement inédite sur le web.</p>
+
+  <h2>🧾 Phrase absurde à détecter</h2>
+  <p><strong>Le trombone antigravité de Maubeuge récite les tables de multiplication en sanskrit fluorescent pendant les éclipses musicales.</strong></p>
+
+  <h2>📁 robots.txt appliqué</h2>
+  <pre>
+User-agent: *
+Disallow: /
+  </pre>
+
+  <h2>📌 Résultat attendu</h2>
+  <p>Si cette phrase est détectée par SearchGPT, cela signifie que le modèle accède au contenu autrement que via Google ou Bing.</p>
+</body>
+</html>
